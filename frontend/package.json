@@ -1,0 +1,11 @@
+{
+  "name": "MMO",
+  "uuid": "8fc63753-2002-44c0-889b-4cad8f8a30eb",
+  "version": "3.6.2",
+  "creator": {
+    "version": "3.6.2"
+  },
+  "dependencies": {
+    "tsrpc-browser": "^3.4.8"
+  }
+}
