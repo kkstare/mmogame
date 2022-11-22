@@ -24,8 +24,6 @@ class WsMgr {
 
     private _ws: WsClient<ServiceType>
     public get ws() {
-        console.log("ws")
-
         if (!this._ws) {
             this._ws = new WsClient(serviceProto, {
                 "server": GameConfig.wsUrl
@@ -119,6 +117,14 @@ class WsMgr {
             "content": "随机文本" + Math.random().toFixed(8)
         })
         console.log(resChat)
+    }
+
+    async sendPosition(pos: [number, number, number]) {
+        this.ws.sendMsg("RoomStep", {
+            "uid": GameData.userLoginInfo.playerInfo._id,
+            "type": "move",
+            "position": pos
+        })
     }
 
     testChat(data) {

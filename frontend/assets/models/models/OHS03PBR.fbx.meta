@@ -1,0 +1,126 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "bfabbea7-83ac-43e3-85a3-f652268f3234",
+  "files": [],
+  "subMetas": {
+    "43166": {
+      "importer": "gltf-scene",
+      "uuid": "bfabbea7-83ac-43e3-85a3-f652268f3234@43166",
+      "displayName": "",
+      "id": "43166",
+      "name": "OHS03PBR.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "aeff6": {
+      "importer": "gltf-mesh",
+      "uuid": "bfabbea7-83ac-43e3-85a3-f652268f3234@aeff6",
+      "displayName": "",
+      "id": "aeff6",
+      "name": "OHS03_Sword_R.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "43c71": {
+      "importer": "gltf-embeded-image",
+      "uuid": "bfabbea7-83ac-43e3-85a3-f652268f3234@43c71",
+      "displayName": "",
+      "id": "43c71",
+      "name": "file1.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "d20e9": {
+      "importer": "texture",
+      "uuid": "bfabbea7-83ac-43e3-85a3-f652268f3234@d20e9",
+      "displayName": "",
+      "id": "d20e9",
+      "name": "file1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/texture/Albedo.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8d883": {
+      "importer": "gltf-material",
+      "uuid": "bfabbea7-83ac-43e3-85a3-f652268f3234@8d883",
+      "displayName": "",
+      "id": "8d883",
+      "name": "lambert1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file1",
+        "remap": "db://assets/models/texture/Albedo.png",
+        "uri": "bfabbea7-83ac-43e3-85a3-f652268f3234@43c71"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "bfabbea7-83ac-43e3-85a3-f652268f3234@43166",
+    "assetFinder": {
+      "meshes": [
+        "bfabbea7-83ac-43e3-85a3-f652268f3234@aeff6"
+      ],
+      "skeletons": [],
+      "textures": [
+        "bfabbea7-83ac-43e3-85a3-f652268f3234@d20e9"
+      ],
+      "materials": [
+        "bfabbea7-83ac-43e3-85a3-f652268f3234@8d883"
+      ],
+      "scenes": [
+        "bfabbea7-83ac-43e3-85a3-f652268f3234@43166"
+      ]
+    }
+  }
+}

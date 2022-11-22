@@ -17,7 +17,9 @@ export const httpServer = new HttpServer(HttpProto, {
 export const wsServer = new WsServer(wsProto, {
     port: 3001,
     // Remove this to use binary mode (remove from the client too)
-    json: true
+    json: true,
+    "logLevel": "error"
+
 });
 
 // Initialize before server start

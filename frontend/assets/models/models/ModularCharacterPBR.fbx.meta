@@ -1,0 +1,397 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b",
+  "files": [],
+  "subMetas": {
+    "30732": {
+      "importer": "gltf-skeleton",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@30732",
+      "displayName": "",
+      "id": "30732",
+      "name": "UnnamedSkeleton-0.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 43
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "58738": {
+      "importer": "gltf-mesh",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@58738",
+      "displayName": "",
+      "id": "58738",
+      "name": "Eye01.mesh",
+      "userData": {
+        "gltfIndex": 5
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "eceda": {
+      "importer": "gltf-mesh",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@eceda",
+      "displayName": "",
+      "id": "eceda",
+      "name": "Head01_Male.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a92dc": {
+      "importer": "gltf-mesh",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@a92dc",
+      "displayName": "",
+      "id": "a92dc",
+      "name": "Head02_Female.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7cdf8": {
+      "importer": "gltf-mesh",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@7cdf8",
+      "displayName": "",
+      "id": "7cdf8",
+      "name": "Hair01.mesh",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "01562": {
+      "importer": "gltf-mesh",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@01562",
+      "displayName": "",
+      "id": "01562",
+      "name": "Hair06.mesh",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f6397": {
+      "importer": "gltf-mesh",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@f6397",
+      "displayName": "",
+      "id": "f6397",
+      "name": "Eye02.mesh",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c332d": {
+      "importer": "gltf-mesh",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@c332d",
+      "displayName": "",
+      "id": "c332d",
+      "name": "Mouth01.mesh",
+      "userData": {
+        "gltfIndex": 6
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "56e33": {
+      "importer": "gltf-mesh",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@56e33",
+      "displayName": "",
+      "id": "56e33",
+      "name": "Mouth02.mesh",
+      "userData": {
+        "gltfIndex": 7
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2bfe6": {
+      "importer": "gltf-mesh",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@2bfe6",
+      "displayName": "",
+      "id": "2bfe6",
+      "name": "Body05.mesh",
+      "userData": {
+        "gltfIndex": 8
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7e541": {
+      "importer": "gltf-mesh",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@7e541",
+      "displayName": "",
+      "id": "7e541",
+      "name": "Cloak02.mesh",
+      "userData": {
+        "gltfIndex": 9
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ce4b5": {
+      "importer": "gltf-mesh",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@ce4b5",
+      "displayName": "",
+      "id": "ce4b5",
+      "name": "Body10.mesh",
+      "userData": {
+        "gltfIndex": 10
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "35f8d": {
+      "importer": "gltf-mesh",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@35f8d",
+      "displayName": "",
+      "id": "35f8d",
+      "name": "Cloak03.mesh",
+      "userData": {
+        "gltfIndex": 11
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f1394": {
+      "importer": "gltf-skeleton",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@f1394",
+      "displayName": "",
+      "id": "f1394",
+      "name": "UnnamedSkeleton-1.skeleton",
+      "userData": {
+        "gltfIndex": 1,
+        "jointsLength": 43
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "75ee4": {
+      "importer": "gltf-skeleton",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@75ee4",
+      "displayName": "",
+      "id": "75ee4",
+      "name": "UnnamedSkeleton-2.skeleton",
+      "userData": {
+        "gltfIndex": 2,
+        "jointsLength": 43
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a72ab": {
+      "importer": "gltf-skeleton",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@a72ab",
+      "displayName": "",
+      "id": "a72ab",
+      "name": "UnnamedSkeleton-3.skeleton",
+      "userData": {
+        "gltfIndex": 3,
+        "jointsLength": 43
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "43c71": {
+      "importer": "gltf-embeded-image",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@43c71",
+      "displayName": "",
+      "id": "43c71",
+      "name": "file1.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "d20e9": {
+      "importer": "texture",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@d20e9",
+      "displayName": "",
+      "id": "d20e9",
+      "name": "file1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/texture/Albedo.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8d883": {
+      "importer": "gltf-material",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@8d883",
+      "displayName": "",
+      "id": "8d883",
+      "name": "lambert1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "538f1": {
+      "importer": "gltf-scene",
+      "uuid": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@538f1",
+      "displayName": "",
+      "id": "538f1",
+      "name": "ModularCharacterPBR.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file1",
+        "remap": "db://assets/models/texture/Albedo.png",
+        "uri": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@43c71"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@538f1",
+    "assetFinder": {
+      "meshes": [
+        "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@eceda",
+        "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@a92dc",
+        "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@7cdf8",
+        "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@01562",
+        "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@f6397",
+        "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@58738",
+        "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@c332d",
+        "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@56e33",
+        "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@2bfe6",
+        "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@7e541",
+        "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@ce4b5",
+        "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@35f8d"
+      ],
+      "skeletons": [
+        "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@30732",
+        "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@f1394",
+        "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@75ee4",
+        "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@a72ab"
+      ],
+      "textures": [
+        "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@d20e9"
+      ],
+      "materials": [
+        "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@8d883"
+      ],
+      "scenes": [
+        "f627f0ca-3c1e-4f9d-beb5-4cac1a07798b@538f1"
+      ]
+    }
+  }
+}

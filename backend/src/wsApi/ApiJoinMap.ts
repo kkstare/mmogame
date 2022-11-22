@@ -7,4 +7,5 @@ export default async function (call: ApiCall<ReqJoinMap, ResJoinMap>) {
     // call.error('API Not Implemented');
     RoomMgr.joinRoom(call.conn, call.req.mapId)
 
+    call.succ({})
 }

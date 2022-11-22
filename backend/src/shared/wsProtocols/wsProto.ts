@@ -1,5 +1,6 @@
 import { ServiceProto } from 'tsrpc-proto';
 import { MsgChat } from './MsgChat';
+import { MsgRoomStep } from './MsgRoomStep';
 import { ReqJoinMap, ResJoinMap } from './PtlJoinMap';
 
 export interface ServiceType {
@@ -10,15 +11,22 @@ export interface ServiceType {
         }
     },
     msg: {
-        "Chat": MsgChat
+        "Chat": MsgChat,
+        "RoomStep": MsgRoomStep
     }
 }
 
 export const serviceProto: ServiceProto<ServiceType> = {
+    "version": 3,
     "services": [
         {
             "id": 0,
             "name": "Chat",
+            "type": "msg"
+        },
+        {
+            "id": 2,
+            "name": "RoomStep",
             "type": "msg"
         },
         {
@@ -72,6 +80,134 @@ export const serviceProto: ServiceProto<ServiceType> = {
                     }
                 }
             ]
+        },
+        "MsgRoomStep/MsgRoomStep": {
+            "type": "Union",
+            "members": [
+                {
+                    "id": 0,
+                    "type": {
+                        "type": "Reference",
+                        "target": "MsgRoomStep/MsgPLayerMove"
+                    }
+                },
+                {
+                    "id": 1,
+                    "type": {
+                        "type": "Reference",
+                        "target": "MsgRoomStep/MsgPLayerState"
+                    }
+                },
+                {
+                    "id": 2,
+                    "type": {
+                        "type": "Reference",
+                        "target": "MsgRoomStep/MsgItemState"
+                    }
+                },
+                {
+                    "id": 3,
+                    "type": {
+                        "type": "Reference",
+                        "target": "MsgRoomStep/MsgPlayersMove"
+                    }
+                }
+            ]
+        },
+        "MsgRoomStep/MsgPLayerMove": {
+            "type": "Interface",
+            "properties": [
+                {
+                    "id": 0,
+                    "name": "type",
+                    "type": {
+                        "type": "Literal",
+                        "literal": "move"
+                    }
+                },
+                {
+                    "id": 2,
+                    "name": "uid",
+                    "type": {
+                        "type": "String"
+                    }
+                },
+                {
+                    "id": 1,
+                    "name": "position",
+                    "type": {
+                        "type": "Tuple",
+                        "elementTypes": [
+                            {
+                                "type": "Number"
+                            },
+                            {
+                                "type": "Number"
+                            },
+                            {
+                                "type": "Number"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "MsgRoomStep/MsgPLayerState": {
+            "type": "Interface",
+            "properties": [
+                {
+                    "id": 0,
+                    "name": "type",
+                    "type": {
+                        "type": "Literal",
+                        "literal": "playerState"
+                    }
+                },
+                {
+                    "id": 3,
+                    "name": "uid",
+                    "type": {
+                        "type": "String"
+                    }
+                },
+                {
+                    "id": 1,
+                    "name": "userName",
+                    "type": {
+                        "type": "String"
+                    }
+                },
+                {
+                    "id": 2,
+                    "name": "model",
+                    "type": {
+                        "type": "String"
+                    }
+                }
+            ]
+        },
+        "MsgRoomStep/MsgItemState": {
+            "type": "Interface",
+            "properties": [
+                {
+                    "id": 0,
+                    "name": "type",
+                    "type": {
+                        "type": "Literal",
+                        "literal": "itemState"
+                    }
+                }
+            ]
+        },
+        "MsgRoomStep/MsgPlayersMove": {
+            "type": "Interface",
+            "indexSignature": {
+                "keyType": "String",
+                "type": {
+                    "type": "Reference",
+                    "target": "MsgRoomStep/MsgRoomStep"
+                }
+            }
         },
         "PtlJoinMap/ReqJoinMap": {
             "type": "Interface",

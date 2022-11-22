@@ -1,0 +1,126 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "9e0bd65f-8e7e-4962-ae16-2f3b6cc18d56",
+  "files": [],
+  "subMetas": {
+    "35ebe": {
+      "importer": "gltf-mesh",
+      "uuid": "9e0bd65f-8e7e-4962-ae16-2f3b6cc18d56@35ebe",
+      "displayName": "",
+      "id": "35ebe",
+      "name": "pCylinder1.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "adacb": {
+      "importer": "gltf-embeded-image",
+      "uuid": "9e0bd65f-8e7e-4962-ae16-2f3b6cc18d56@adacb",
+      "displayName": "",
+      "id": "adacb",
+      "name": "file2.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "e873a": {
+      "importer": "texture",
+      "uuid": "9e0bd65f-8e7e-4962-ae16-2f3b6cc18d56@e873a",
+      "displayName": "",
+      "id": "e873a",
+      "name": "file2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/texture/Albedo.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ee1c1": {
+      "importer": "gltf-material",
+      "uuid": "9e0bd65f-8e7e-4962-ae16-2f3b6cc18d56@ee1c1",
+      "displayName": "",
+      "id": "ee1c1",
+      "name": "Stage_lambert1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9e736": {
+      "importer": "gltf-scene",
+      "uuid": "9e0bd65f-8e7e-4962-ae16-2f3b6cc18d56@9e736",
+      "displayName": "",
+      "id": "9e736",
+      "name": "Stage.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file2",
+        "remap": "db://assets/models/texture/Albedo.png",
+        "uri": "9e0bd65f-8e7e-4962-ae16-2f3b6cc18d56@adacb"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "9e0bd65f-8e7e-4962-ae16-2f3b6cc18d56@9e736",
+    "assetFinder": {
+      "meshes": [
+        "9e0bd65f-8e7e-4962-ae16-2f3b6cc18d56@35ebe"
+      ],
+      "skeletons": [],
+      "textures": [
+        "9e0bd65f-8e7e-4962-ae16-2f3b6cc18d56@e873a"
+      ],
+      "materials": [
+        "9e0bd65f-8e7e-4962-ae16-2f3b6cc18d56@ee1c1"
+      ],
+      "scenes": [
+        "9e0bd65f-8e7e-4962-ae16-2f3b6cc18d56@9e736"
+      ]
+    }
+  }
+}

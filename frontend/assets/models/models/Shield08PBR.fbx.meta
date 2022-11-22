@@ -1,0 +1,126 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "1042bc72-075d-4337-9373-724991fdb4ae",
+  "files": [],
+  "subMetas": {
+    "72427": {
+      "importer": "gltf-mesh",
+      "uuid": "1042bc72-075d-4337-9373-724991fdb4ae@72427",
+      "displayName": "",
+      "id": "72427",
+      "name": "Shield08.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "43c71": {
+      "importer": "gltf-embeded-image",
+      "uuid": "1042bc72-075d-4337-9373-724991fdb4ae@43c71",
+      "displayName": "",
+      "id": "43c71",
+      "name": "file1.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "d20e9": {
+      "importer": "texture",
+      "uuid": "1042bc72-075d-4337-9373-724991fdb4ae@d20e9",
+      "displayName": "",
+      "id": "d20e9",
+      "name": "file1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/texture/Albedo.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8d883": {
+      "importer": "gltf-material",
+      "uuid": "1042bc72-075d-4337-9373-724991fdb4ae@8d883",
+      "displayName": "",
+      "id": "8d883",
+      "name": "lambert1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c72af": {
+      "importer": "gltf-scene",
+      "uuid": "1042bc72-075d-4337-9373-724991fdb4ae@c72af",
+      "displayName": "",
+      "id": "c72af",
+      "name": "Shield08PBR.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file1",
+        "remap": "db://assets/models/texture/Albedo.png",
+        "uri": "1042bc72-075d-4337-9373-724991fdb4ae@43c71"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "1042bc72-075d-4337-9373-724991fdb4ae@c72af",
+    "assetFinder": {
+      "meshes": [
+        "1042bc72-075d-4337-9373-724991fdb4ae@72427"
+      ],
+      "skeletons": [],
+      "textures": [
+        "1042bc72-075d-4337-9373-724991fdb4ae@d20e9"
+      ],
+      "materials": [
+        "1042bc72-075d-4337-9373-724991fdb4ae@8d883"
+      ],
+      "scenes": [
+        "1042bc72-075d-4337-9373-724991fdb4ae@c72af"
+      ]
+    }
+  }
+}
