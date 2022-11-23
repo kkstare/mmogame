@@ -57,7 +57,12 @@ class RoomMgr {
             }
         }
 
-
+        //广播完消息清空
+        for (const roomId in this.roomMsg) {
+            if (Object.prototype.hasOwnProperty.call(this.roomMsg, roomId)) {
+                this.roomMsg[roomId] = {}
+            }
+        }
     }
 
     //玩家退出当前所在的房间
