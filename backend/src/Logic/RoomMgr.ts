@@ -1,7 +1,7 @@
 import { BaseConnection, MsgCall } from "tsrpc";
-import { wsServer } from "..";
 import { MsgPLayerMove, MsgRoomStep } from "../shared/wsProtocols/MsgRoomStep";
 import { ServiceType } from "../shared/wsProtocols/wsProto";
+import { wsServer } from "../WsServer";
 
 class RoomMgr {
     private static _ins: RoomMgr;
@@ -58,9 +58,11 @@ class RoomMgr {
         }
 
         //广播完消息清空
+        //不应该直接清空 这样在网络差的情况会被当做掉线了处理
         for (const roomId in this.roomMsg) {
             if (Object.prototype.hasOwnProperty.call(this.roomMsg, roomId)) {
-                this.roomMsg[roomId] = {}
+                // this.roomMsg[roomId] = {}
+
             }
         }
     }
@@ -73,8 +75,14 @@ class RoomMgr {
         if (!conn.roomId) {
             return
         }
+
+        //从房间内删除连接
         let index = this.rooms[conn.roomId].findIndex((v) => v.uid == conn.uid)
         this.rooms[conn.roomId].splice(index, 1)
+
+        //清空在房间的状态
+        delete this.roomMsg[conn.roomId][conn.stringId]
+
     }
 
     listenRoomStep(conn: BaseConnection<ServiceType>, data: MsgRoomStep) {
@@ -104,4 +112,4 @@ class RoomMgr {
 
 }
 
-export default RoomMgr.ins
+export default RoomMgr

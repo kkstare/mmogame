@@ -18,6 +18,7 @@ declare module 'tsrpc' {
 
     export interface BaseConnection {
         uid: ObjectId //玩家objectId
+        stringId: string
         roomId: string //玩家当前的房间id
     }
 }
@@ -44,6 +45,7 @@ export function useCheckAccess(Server: BaseServer<any>) {
                 v.error('您还未登录~', { code: 'need_login' })
                 return
             }
+            v.conn.stringId = uid
             v.conn.uid = new ObjectId(uid)
         }
         return v
