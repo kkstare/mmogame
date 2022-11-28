@@ -38,13 +38,13 @@ class RoomMgr {
         conn.roomId = roomId
         this.rooms[roomId].push(conn)
 
-        console.log(this.rooms)
+        // console.log(this.rooms)
     }
 
     broadRoomState() {
 
-        console.log(this.roomMsg)
-        console.log("userStates", RoomMgr.logTime++)
+        // console.log(this.roomMsg)
+        // console.log("userStates", RoomMgr.logTime++)
         // console.log(this.roomMsg)
 
 

@@ -10,7 +10,8 @@
     "test": "mocha test/**/*.test.ts",
     "proto": "tsrpc-cli proto",
     "sync": "tsrpc-cli sync",
-    "api": "tsrpc-cli api"
+    "api": "tsrpc-cli api",
+    "addCdk": "nodets src/test/AddCdk.ts"
   },
   "devDependencies": {
     "@types/mocha": "^8.2.3",

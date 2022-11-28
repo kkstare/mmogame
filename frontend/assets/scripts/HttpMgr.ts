@@ -81,6 +81,19 @@ class HttpMgr {
         return res
     }
 
+    async exchangeCdk(cdk: string) {
+        let res = await this.callApi("ExchangeCDK", {
+            "cdk": cdk
+        })
+        console.log(res)
+    }
+
+    async getEmails() {
+        let res = await this.callApi("GetEmail", {
+        })
+        console.log(res)
+    }
+
 }
 
 export default new HttpMgr();

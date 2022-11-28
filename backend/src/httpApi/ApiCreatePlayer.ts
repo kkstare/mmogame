@@ -11,6 +11,7 @@ export default async function (call: ApiCall<ReqCreatePlayer, ResCreatePlayer>) 
         model: call.req.model,
         level: 1,
         gold: 1000,
+        gotCdk: []
     }).then(async (v) => {
         await Global.collection("users").findOneAndUpdate({
             _id: new ObjectId(parseSSO(call.req.sso))

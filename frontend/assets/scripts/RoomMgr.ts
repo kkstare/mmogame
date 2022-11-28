@@ -36,7 +36,7 @@ export class RoomMgr extends Component {
     //做了消息合并 在此处分发
     recAllData(data: MsgRoomStep) {
         let data1 = data as MsgPlayersMove
-        console.log(data1)
+        // console.log(data1)
         for (const uid in data1) {
             if (Object.prototype.hasOwnProperty.call(data1, uid)) {
                 const data = data1[uid];

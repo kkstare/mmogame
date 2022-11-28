@@ -1,5 +1,6 @@
-import { Camera, Component, EventTouch, geometry, Label, Node, Vec3, _decorator } from 'cc';
+import { Camera, Component, EditBox, EventTouch, geometry, Label, Node, Vec3, _decorator } from 'cc';
 import GameData from './GameData';
+import HttpMgr from './HttpMgr';
 import { PlayerLogic } from './PlayerLogic';
 import WsMgr from './WsMgr';
 const { ccclass, property } = _decorator;
@@ -25,7 +26,9 @@ export class Game extends Component {
 
     testArrays = [
         this.test1,
-        this.test2
+        this.test2,
+        this.test3,
+        this.test4
     ]
 
     onLoad() {
@@ -70,11 +73,12 @@ export class Game extends Component {
     }
 
     test3() {
-        WsMgr.joinMap("2")
+        let cdk = this.testBtns.children[2].children[0].getComponent(EditBox).string
+        HttpMgr.exchangeCdk(cdk)
     }
 
     test4() {
-        WsMgr.joinMap("2")
+        HttpMgr.getEmails()
     }
     start() {
 
