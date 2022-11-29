@@ -92,6 +92,7 @@ class HttpMgr {
         let res = await this.callApi("GetEmail", {
         })
         console.log(res)
+        return res.res
     }
 
 }

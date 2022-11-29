@@ -1,7 +1,8 @@
-import { Camera, Component, EditBox, EventTouch, geometry, Label, Node, Vec3, _decorator } from 'cc';
+import { Camera, Component, EditBox, EventTouch, geometry, instantiate, Label, Node, Vec3, _decorator } from 'cc';
 import GameData from './GameData';
 import HttpMgr from './HttpMgr';
 import { PlayerLogic } from './PlayerLogic';
+import WinMgr, { winName } from './WinMgr';
 import WsMgr from './WsMgr';
 const { ccclass, property } = _decorator;
 
@@ -23,7 +24,8 @@ export class Game extends Component {
     camera!: Camera
     @property(Node)
     player: Node
-
+    @property(Node)
+    winParent: Node
     testArrays = [
         this.test1,
         this.test2,
@@ -77,8 +79,10 @@ export class Game extends Component {
         HttpMgr.exchangeCdk(cdk)
     }
 
-    test4() {
-        HttpMgr.getEmails()
+    async test4() {
+        let Prefab = await WinMgr.loadPrefab(winName.email)
+        let node = instantiate(Prefab)
+        node.parent = this.winParent
     }
     start() {
 
