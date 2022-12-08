@@ -18,6 +18,7 @@ useCheckAccess(wsServer) // 验证登录态及权限
 export async function initWsServer() {
     await wsServer.autoImplementApi(path.resolve(__dirname, 'wsApi'));
 
+
     await wsServer.start()
     // 断开连接后,将用户退出房间
 

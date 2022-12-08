@@ -17,7 +17,6 @@ export const winConfig: Record<winName, winType> = {
 
 
 export default class WinMgr {
-
     //暂时只做一个加载预制体的
     static async loadPrefab<T extends winName>(winName: T) {
         return new Promise<Prefab>((resolve, reject) => {

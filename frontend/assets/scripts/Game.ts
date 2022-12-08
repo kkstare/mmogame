@@ -30,7 +30,9 @@ export class Game extends Component {
         this.test1,
         this.test2,
         this.test3,
-        this.test4
+        this.test4,
+        this.test5,
+        this.test6,
     ]
 
     onLoad() {
@@ -84,6 +86,17 @@ export class Game extends Component {
         let node = instantiate(Prefab)
         node.parent = this.winParent
     }
+
+    test5() {
+        let data = this.testBtns.children[4].children[0].getComponent(EditBox).string
+        HttpMgr.uploadData(data)
+    }
+
+    test6() {
+        HttpMgr.downloadData()
+    }
+
+
     start() {
 
     }

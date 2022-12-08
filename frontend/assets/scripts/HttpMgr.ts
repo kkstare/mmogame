@@ -1,6 +1,7 @@
 import { _decorator } from 'cc';
 import { ApiReturn, HttpClient, HttpClientTransportOptions } from 'tsrpc-browser';
 import { serviceProto, ServiceType } from '../shared/httpProtocols/httpProto';
+import { EncryptUtil } from './EncryptUtil';
 import GameConfig from './GameConfig';
 import GameData from './GameData';
 const { ccclass, property } = _decorator;
@@ -16,8 +17,23 @@ class HttpMgr {
         if (!this._httpCliet) {
             this._httpCliet = new HttpClient(serviceProto, {
                 server: GameConfig.httpUrl,
-                logger: console
+                logger: console,
+                // json: true,
             });
+            //  协议加密
+            this._httpCliet.flows.preSendDataFlow.push(v => {
+                if (v.data instanceof Uint8Array) {
+                    v.data = EncryptUtil.encrypt(v.data)
+                }
+                return v
+            })
+            //  协议解密
+            this._httpCliet.flows.preRecvDataFlow.push(v => {
+                if (v.data instanceof Uint8Array) {
+                    v.data = EncryptUtil.decrypt(v.data)
+                }
+                return v
+            })
 
             // 添加登录态到请求中
             this._httpCliet.flows.preCallApiFlow.push(v => {
@@ -40,7 +56,7 @@ class HttpMgr {
 
 
     async userLogin(account: string, password: string) {
-        let ret = await this.httpCliet.callApi("Login", {
+        let ret = await this.callApi("Login", {
             "account": account,
             "password": password,
         });
@@ -95,6 +111,20 @@ class HttpMgr {
         return res.res
     }
 
+    async uploadData(data: string) {
+        let res = await this.callApi("UploadData", {
+            "data": data
+        })
+
+        console.log(res)
+    }
+
+    async downloadData() {
+        let res = await this.callApi("DownloadData", {
+        })
+
+        console.log(res)
+    }
 }
 
 export default new HttpMgr();

@@ -1,5 +1,6 @@
 import path from "path";
 import { HttpServer } from "tsrpc";
+import { EncryptUtil } from "./EncryptUtil";
 import { serviceProto as HttpProto } from './shared/httpProtocols/httpProto';
 import { useCheckAccess } from "./SSOUtil";
 
@@ -15,4 +16,14 @@ export async function initHttpServer() {
     await httpServer.autoImplementApi(path.resolve(__dirname, 'httpApi'));
 
     await httpServer.start()
+
+    httpServer.flows.preSendDataFlow.push(v => {
+        v.data = EncryptUtil.encrypt(v.data as Uint8Array)
+        return v
+    })
+
+    httpServer.flows.preRecvDataFlow.push(v => {
+        v.data = EncryptUtil.decrypt(v.data as Uint8Array)
+        return v
+    })
 }

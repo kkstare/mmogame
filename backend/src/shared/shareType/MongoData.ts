@@ -16,6 +16,8 @@ export interface dbPlayer {
     gold: number,
     //已经使用的cdk
     gotCdk: string[],
+
+    data?: string
 }
 
 export interface dbCdk {
